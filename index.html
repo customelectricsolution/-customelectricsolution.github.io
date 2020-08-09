@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html class="no-js" style="background-color:black;">
+<!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title class="center">Custom Solution</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="jquery-3.0.0.js"></script>
+    </head>
+    <!-- Header-->
+    <header>
+
+        <body>
+            <h2>
+                Custom and Personal Electric Solution
+            </h2>
+
+            
+            <div>
+                    <img id="myImg" src="images/mypic.jpg" alt="Nothing to see here today." height="300">
+            </div>
+            <br />
+        </body>
+    </header>
+    <!-- Header end-->
+
+    <body class="center">
+        <h1>Do you want a device that you can call your own? </h1>
+        <h1>A Design to reflect your personality and represent you.</h1>
+
+        <form form class="cmxform" id="commentForm" method="post" action="https://formspree.io/customelectricsolution@protonmail.com">
+            <fieldset>
+                <p style="color:white"> All inquiries are confidential.</p>
+                <h2 style="color: white"><b id="highlighttext1">Call or text:</b> 208-410-6543</h2>
+                <h2 style="color: white"><b id="highlighttext2">Email for confidential inquiry:</b> customelectricsolution@protonmail.com</h2>
+                <h2>I do want to advise you that the USA, as of 2013, is no longer an "first to invent" patent system, it is a "first to file".</h2>
+                <p style="color:white">So, Enter details for your inquiry if you don't have a care for the world wide web eavesdropping to steal your signature idea:</p>
+                <p>
+                    <label for="custName">Name</label>
+                    <input id="custName" name="name" type="text" required>
+                </p>
+                <p>
+                    <label for="custEmail">E-Mail</label>
+                    <input id="custEmail" type="email" name="_replyto" required>
+                </p>
+                <p style="font-size: larger;">
+                    <label for="custTitle">Idea Title</label><br />
+                    <input id="custTitle" name="title" type="text" required>
+                </p>
+                <p style="font-size: larger;">
+                    <label for="custMessage">Description
+                    </label><br/>
+                    <textarea id="custMessage" name="message" rows="5" cols="50" required></textarea>
+                </p>
+                <p>
+                    <input type="hidden" name="_next" value="https://customelectricsolution.github.io/inquirySuccessful.html">
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="Send">
+                </p>
+            </fieldset>
+        </form> <br/> <br/>
+
+        <p style="color: white">If a personalized solution is what you desire, look no further!
+        <p style="color: white">I am here for: consumer electronics consulting, prototype designing, testing and troubleshooting, web development, Java, app development, and other electrical services.</p>
+        <p style="color: white">Perhaps you want to design and build your own electrical devices.I am available to provide lessons on the fundamentals of electrical design so you can build devices yourself!</p>
+        <br/><br/>
+
+        
+        <div>
+            <h1>About Me</h1>
+            <br />
+            <img id="myImg" src="images/mypic2.jpg" alt="Nothing to see here today." width="50%"/>
+            <br /><br />
+        
+            <p style="color:white">
+                I have aquired knowledge and skills involving electricity via academia and enterprise, and enjoy finding solutions. <br />
+                Have experience in designing consumer electronics, as well as research and developing novel designs. <br />
+                Also know a little about intellectual property on the US side.  <br />
+                Fully willing to support your application to a patent should you so desire.<br />
+            </p>
+        </div>
+        <br /> <br />
+
+        <!-- Footer-->
+        <div class="footer" class="center">
+            <p id="currentDate"></p>
+        </div>
+
+        <script>
+            //footer script
+            var d = new Date().getFullYear();
+            document.getElementById("currentDate").innerHTML = "Copyright " + d;
+        </script>
+        <!-- Footer end-->
+    </body>
+
+        <script src="" async defer></script>
+
+        <script>
+            $("#commentForm").validate();
+        </script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+
+        <script type="text/javascript">
+        
+            //use the each function to iterate over a set of elements and operate on them
+            var leftmargin = 0;
+            var colorSelect = 0;
+            var colorScheme = ["white", "blue"];
+            var timer1 = setInterval(changeMargin, 2000);
+
+            function changeMargin() {
+        
+                if (colorSelect < (colorScheme.length-1))
+                    colorSelect++;
+                else colorSelect = 0;
+        
+                document.getElementById("highlighttext1").style.color = colorScheme[colorSelect];
+                document.getElementById("highlighttext2").style.color = colorScheme[colorSelect];
+            }
+        </script>
